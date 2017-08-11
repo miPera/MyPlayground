@@ -124,3 +124,30 @@ if let space13AssigneeTrue = nameByParkingSpace[13] {
     print("Key 13 is assigned in the dictionary!")
 }
 
+//-------------------------------------------------
+//Loops and String Interpolation
+//-------------------------------------------------
+
+//for loop
+let range = 0..<countingUp.count
+for i in range {
+    let string = countingUp[i]
+    //Use 'string'
+}
+
+//enumerating items in array
+for string in countingUp {
+    //Use 'string'
+}
+
+//getting index of each item in array using enumerated, which returns a tuple
+for (i, string) in countingUp.enumerated() {
+    //(0, "one"), (1, "two")
+}
+
+//enumerating contents of a dictionary
+for (space, name) in nameByParkingSpace {
+    let permit = "Space \(space): \(name)"  //String interpolation
+}
+
+//String Interpolation: expressions encoled in \() are evaluated and inserted into the string at runtime
