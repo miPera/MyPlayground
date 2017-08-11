@@ -2,11 +2,9 @@
 
 import UIKit
 
-// This playground is used to experiment with Swift standard types
+/* This playground is used to experiment with Swift standard types */
 
-//------------------------
 // Variables and Inference:
-//------------------------
 /*
  Type Inference: The compiler infers the values for the variables and constants below using initial value
  Option-click on the variable or constant identifier to view the inferred type
@@ -55,3 +53,5 @@ let floatFromLiteral = Float(3.14)          // initializing float to ~pi
 let easyPi = 3.14                           // float literals infer a type of Double
 let floatFromDouble = Float(easyPi)         // creates Float from Double
 let floatingPi: Float = 3.14                // creates Float from Double
+
+//Properties
