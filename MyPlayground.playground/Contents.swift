@@ -61,3 +61,40 @@ emptyString.isEmpty //String property for whether or not a string is empty
 //Instance methods
 var countingUp2 = ["one", "two"]
 countingUp2.append("three")         //appends the String "three" to end of Array
+
+//Optionals (variable may not store a value at all)
+var anOptionalFloat: Float?
+var anOptionalArrayOfStrings: [String]?
+var anOptionalArrayOfOptionalStrings: [String?]?
+
+//the following may contain "nil" as a value or some Float value
+var reading1: Float?
+var reading2: Float?
+var reading3: Float?
+
+//values can be assigned to optionals
+reading1 = 9.8
+reading2 = 9.2
+reading3 = 9.7
+
+/*
+ Optionals require unwrapping to use their value since the value may be "nil", unlike non-optiona variables. There are two ways to unwrap an optional: optional binding and forced unwrapping 
+ */
+
+/* 
+ Forced unwrapping: Append a "!" to end of optional. Less "safe" than optional binding since the optional may contain the value "nil"
+ */
+//let avgReading = (readng1 + reading2 + reading3)/3  //error (requires unwrapping
+let avgReading = (reading1! + reading2! + reading3!)/3
+
+/*
+ Optional binding: Makes use of an if-let statement. Preferred method of unwrapping optionals.
+ */
+
+if  let r1 = reading1,
+    let r2 = reading2,
+    let r3 = reading3 {
+        let avgReading = (r1 + r2 + r3)/3
+    } else {
+        let errorString = "Instrument reported a reading that was nil"
+    }
