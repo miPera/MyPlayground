@@ -24,3 +24,12 @@ let constStr = str
 var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
+
+//Arrays and dictionaries are strongly typed
+var arrayOfInts1: Array<Int>    //integer array
+var arrayOfInts2: [Int]         //integer array
+var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  //dictionary
+var dictionaryOfCapitalsByCountry2: [String:String]             //dictionary
+var winiingLotteryNumbers: Set<Int>     //set
+
+
