@@ -149,5 +149,44 @@ for (i, string) in countingUp.enumerated() {
 for (space, name) in nameByParkingSpace {
     let permit = "Space \(space): \(name)"  //String interpolation
 }
-
 //String Interpolation: expressions encoled in \() are evaluated and inserted into the string at runtime
+
+//-------------------------------------------------
+//Enumerations and the Switch Statement
+//-------------------------------------------------
+//Enumeration: Type with a discrete set of values
+enum PieType  {
+    case apple
+    case cherry
+    case pecan
+}
+let favoritePie = PieType.apple
+
+//Switch statement
+let name: String
+switch favoritePie {
+    case .apple:
+        name = "Apple"
+    case .cherry:
+        name = "Cherry"
+    case . pecan:
+        name = "Pecan"
+}
+
+//Switch statement that matches on ranges
+let macOSVersion: Int = 3
+switch macOSVersion {
+    case 0...8:
+        print("A big cat")
+    case 9:
+        print("Mavericks")
+    case 10:
+        print("Yosemite")
+    case 11:
+        print("El Capitan")
+    case 12:
+        print("Sierra")
+    default:
+        print("Greetings, people of the future! What's new in 10.\(macOSVersion)?")
+}
+
