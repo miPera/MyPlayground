@@ -190,3 +190,17 @@ switch macOSVersion {
         print("Greetings, people of the future! What's new in 10.\(macOSVersion)?")
 }
 
+//-------------------------------------------------
+//Enumerations and raw values
+//-------------------------------------------------
+enum PieType2: Int {
+    case apple = 0
+    case cherry
+    case pecan
+}
+
+let pieRawValue = PieType2.pecan.rawValue   //value of 2
+if let pieType = PieType2(rawValue: pieRawValue) {
+    //Got a valid 'pieType'!
+}
+
