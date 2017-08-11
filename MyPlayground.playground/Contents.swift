@@ -32,4 +32,10 @@ var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  //dictionary
 var dictionaryOfCapitalsByCountry2: [String:String]             //dictionary
 var winiingLotteryNumbers: Set<Int>     //set
 
+//Literals and subscripting
+let number = 42
+let fmStation = 91.1
+let countingUp = ["one", "two"]
+let secondElement = countingUp[1]   //subscripting (accessing array at index 1)
+let nameByParkingSpace = [13:"Alice", 27:"Bob"]
 
