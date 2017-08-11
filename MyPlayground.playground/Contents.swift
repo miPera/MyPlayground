@@ -20,22 +20,38 @@ str = "Hello, Swift"
 let constStr = str
 //constStr = "Hello World"    //causes an error since constStr is a constant
 
-//The following specify the variable type (no type inference)
+// The following specify the variable type (no type inference)
 var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
 
-//Arrays and dictionaries are strongly typed
-var arrayOfInts1: Array<Int>    //integer array
-var arrayOfInts2: [Int]         //integer array
-var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  //dictionary
-var dictionaryOfCapitalsByCountry2: [String:String]             //dictionary
-var winiingLotteryNumbers: Set<Int>     //set
+// Arrays and dictionaries are strongly typed
+var arrayOfInts1: Array<Int>    // integer array
+var arrayOfInts2: [Int]         // integer array
+var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  // dictionary
+var dictionaryOfCapitalsByCountry2: [String:String]             // dictionary
+var winiingLotteryNumbers: Set<Int>     // set
 
-//Literals and subscripting
+// Literals and subscripting
 let number = 42
 let fmStation = 91.1
 let countingUp = ["one", "two"]
-let secondElement = countingUp[1]   //subscripting (accessing array at index 1)
+let secondElement = countingUp[1]   // subscripting (accessing array at index 1). Instance of String.
 let nameByParkingSpace = [13:"Alice", 27:"Bob"]
 
+// Initializers
+// Instances describe calsses, structures and enumerations in Swift.
+let emptyString = String()
+let emptyArrayOfInts = [Int]()
+let emptySetOfFloats = Set<Float>()
+
+let defaultNumber = Int()   // defaults to 0
+let defaultBool = Bool()    // defaults to false
+let defaultFloat = Float()  // defaults to 0.0 (also just 0)
+
+let meaningOfLife = String(number)          // initializing to value of "number" constant
+let availableRooms = Set([205, 411, 412])   // initialing a set
+let floatFromLiteral = Float(3.14)          // initializing float to ~pi
+let easyPi = 3.14                           // float literals infer a type of Double
+let floatFromDouble = Float(easyPi)         // creates Float from Double
+let floatingPi: Float = 3.14                // creates Float from Double
