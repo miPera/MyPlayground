@@ -4,7 +4,9 @@ import UIKit
 
 /*This playground is used to experiment with Swift standard types */
 
+//-------------------------------------------------
 //Variables and Inference:
+//-------------------------------------------------
 /*
  Type Inference: The compiler infers the values for the variables and constants below using initial value
  Option-click on the variable or constant identifier to view the inferred type
@@ -23,21 +25,27 @@ var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
 
+//-------------------------------------------------
 //Arrays and dictionaries are strongly typed
+//-------------------------------------------------
 var arrayOfInts1: Array<Int>    //integer array
 var arrayOfInts2: [Int]         //integer array
 var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  //dictionary
 var dictionaryOfCapitalsByCountry2: [String:String]             //dictionary
 var winiingLotteryNumbers: Set<Int>     //set
 
+//-------------------------------------------------
 //Literals and subscripting
+//-------------------------------------------------
 let number = 42
 let fmStation = 91.1
 let countingUp = ["one", "two"]
 let secondElement = countingUp[1]   //subscripting (accessing array at index 1). Instance of String.
 let nameByParkingSpace = [13:"Alice", 27:"Bob"]
 
+//-------------------------------------------------
 //Initializers
+//-------------------------------------------------
 //Instances describe calsses, structures and enumerations in Swift.
 let emptyString = String()
 let emptyArrayOfInts = [Int]()
@@ -54,15 +62,21 @@ let easyPi = 3.14                           //float literals infer a type of Dou
 let floatFromDouble = Float(easyPi)         //creates Float from Double
 let floatingPi: Float = 3.14                //creates Float from Double
 
+//-------------------------------------------------
 //Properties
+//-------------------------------------------------
 countingUp.count    //Array property for number of elements in array
 emptyString.isEmpty //String property for whether or not a string is empty
 
+//-------------------------------------------------
 //Instance methods
+//-------------------------------------------------
 var countingUp2 = ["one", "two"]
 countingUp2.append("three")         //appends the String "three" to end of Array
 
+//-------------------------------------------------
 //Optionals (variable may not store a value at all)
+//-------------------------------------------------
 var anOptionalFloat: Float?
 var anOptionalArrayOfStrings: [String]?
 var anOptionalArrayOfOptionalStrings: [String?]?
@@ -98,3 +112,8 @@ if  let r1 = reading1,
     } else {
         let errorString = "Instrument reported a reading that was nil"
     }
+
+//-------------------------------------------------
+//Subscripting dictionaries
+//-------------------------------------------------
+
