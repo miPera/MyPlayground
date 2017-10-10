@@ -53,6 +53,9 @@ let nameByParkingSpace = [13:"Alice", 27:"Bob"] //literal dictionary assignment
 let emptyString = String()
 let emptyArrayOfInts = [Int]()
 let emptySetOfFloats = Set<Float>()
+let emptyArrayOfStrings = Array<String>()
+let emptyDictionary = [Int: Int]()
+let emptyDictionaryOfStrings = Dictionary<String, String>()
 
 let defaultNumber = Int()   //defaults to 0
 let defaultBool = Bool()    //defaults to false
