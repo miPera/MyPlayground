@@ -30,6 +30,7 @@ let largeNum: Float80
 //-------------------------------------------------
 //Arrays and dictionaries are strongly typed
 //-------------------------------------------------
+//Swift standard library has three collections: Arrays, Dictionaries, and Sets.
 var arrayOfInts1: Array<Int>    //integer array
 var arrayOfInts2: [Int]         //integer array
 var dictionaryOfCapitalsByCountry1: Dictionary<String, String>  //dictionary
