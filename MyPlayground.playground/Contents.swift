@@ -24,6 +24,8 @@ let constStr = str
 var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
+let newDouble: Double
+let largeNum: Float80
 
 //-------------------------------------------------
 //Arrays and dictionaries are strongly typed
