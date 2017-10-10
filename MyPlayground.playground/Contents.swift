@@ -42,9 +42,9 @@ var winiingLotteryNumbers: Set<Int>     //set
 //-------------------------------------------------
 let number = 42
 let fmStation = 91.1
-let countingUp = ["one", "two"]
+let countingUp = ["one", "two"]     //literal array assignment
 let secondElement = countingUp[1]   //subscripting (accessing array at index 1). Instance of String.
-let nameByParkingSpace = [13:"Alice", 27:"Bob"]
+let nameByParkingSpace = [13:"Alice", 27:"Bob"] //literal dictionary assignment
 
 //-------------------------------------------------
 //Initializers
