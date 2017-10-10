@@ -13,14 +13,14 @@ import UIKit
  */
 
 // variables "var" can change values anytime after declaration
-var str = "Hello, playground"
-str = "Hello, Swift"
+var str = "Hello, playground"   //initial String value
+str = "Hello, Swift"            //changes String variable value
 
 //"let" denotes a constant value, which cannot be changed
 let constStr = str
 //constStr = "Hello World"    //causes an error since constStr is a constant
 
-//The following specify the variable type (no type inference)
+//The following specify the variable type (no type inference, no values assigned)
 var nextYear: Int
 var bodyTemp: Float
 var hasPet: Bool
