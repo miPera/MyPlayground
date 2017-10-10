@@ -125,7 +125,7 @@ if  let r1 = reading1,
 let space13Assignee: String? = nameByParkingSpace[13]   //value is "Alice"
 let space42Assignee: String? = nameByParkingSpace[42]   //value is "nil"
 
-//It's common to use if-let when subscripting a dictionary
+//It's common to use if-let when subscripting a dictionary (optional binding)
 if let space13AssigneeTrue = nameByParkingSpace[13] {
     print("Key 13 is assigned in the dictionary!")
 }
