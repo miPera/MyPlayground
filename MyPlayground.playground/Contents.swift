@@ -146,6 +146,10 @@ for string in countingUp {
     //Use 'string'
 }
 
+for value in countingUp {   //value is a Sting
+    //User value
+}
+
 //getting index of each item in array using enumerated, which returns a tuple
 for (i, string) in countingUp.enumerated() {
     //(0, "one"), (1, "two")
